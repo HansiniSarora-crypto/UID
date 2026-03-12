@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Store</title>
+        <style>
+            body{
+                background-image: url(https://i.pinimg.com/1200x/78/59/98/78599875d4a19601f1d88556fedefcf2.jpg);
+                background-repeat: repeat;
+                background-size: cover;
+            }
+            .Content{
+                display:grid;
+                grid-template-rows: auto auto auto auto;
+                grid-template-columns: 200px auto;
+                grid-template-areas: 
+                       "header header"
+                        "sale sale"
+                        "sider products"
+                        "footer footer";
+                gap:20px;
+                padding:20px;
+                width: 100vw;
+                height: 100vh;
+            }
+            .header{
+                grid-area: header;
+                background-color: lavender;
+                color: mediumvioletred;
+                padding: 20px;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: xx-large;
+                font-style: initial;
+                border: 3px solid rgb(141, 74, 141);
+            }
+            .sale{
+                grid-area: sale;
+                background-color:lightpink;
+                color: rgb(66, 3, 43);
+                padding: 20px;
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: x-large;
+                font-style: inherit;
+                border: 3px solid rgb(104, 36, 104);
+            }
+            .sider{
+                grid-area:sider;
+                background-color:mintcream;
+                color: indigo;
+                padding: 20px;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: x-large;
+                font-style: oblique;
+                border: 3px solid rosybrown;
+            }
+            .sider h3{
+                color: darkmagenta;
+            }
+            .products{
+                grid-area:products;
+                background-color:lavenderblush;
+                color:salmon;
+                padding: 20px;
+                text-align: center;
+                font-family: Georgia, Times, 'Times New Roman', serif;
+                font-size: x-large;
+                font-style: oblique;
+                border: 3px solid lightcoral;
+            }
+             .jar{
+                display:grid;
+                grid-template-columns: repeat(3,auto);
+                grid-template-rows:auto auto;
+                grid-template-areas: repeat(3,1fr);
+                gap:20px;
+                padding:20px;   
+            }
+            .item{
+                text-align: center;
+                font-style: initial;
+                font-size: large;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: darkmagenta;
+                border: 3px solid thistle;
+            }
+            button{
+                cursor:pointer;
+                background-color:lightcoral;
+            }
+            button:hover{
+                background-color:lightpink;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: mistyrose;
+                color:purple;
+                padding: 20px;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: x-large;
+                font-style: initial;
+                border: 3px solid palevioletred;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Content">
+            <div class="header">
+                <img src="https://i.pinimg.com/736x/4f/c8/33/4fc833a1610d8d04b1d2c7b755f18c12.jpg" width="250" height="150" align="left" style="border-radius:5px;">
+                <img src="https://i.pinimg.com/1200x/b2/9c/79/b29c79e9759ee0e73ac7c42e09176dd4.jpg" width="250" height="150" align="right"style="border-radius:5px;">
+                MegaMart-Online<br>
+                  <br>
+                - “Your wallet's best friend.”</div>
+            <div class="sale"> Why pay more when the best deal is right here?<br>
+                <br>
+                - Your smart shopping moment is here: 50-60% savings on every pick!</div>
+            <div class="sider">
+                <h3>DashBoard</h3>
+                <ul>
+                <li>Electronics</li><br>
+                <li>Clothing</li><br>
+                <li>Home Appliances</li><br>
+                <li>Books</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="https://i.pinimg.com/736x/44/6b/84/446b84ea63918e815bee76614b8eae04.jpg" width="150" height="200" align="center" style="border-radius:5px;">
+            </div>
+            <div class="products">
+                 <div class="jar">
+                   <div class="item">
+                      <img src="https://i.pinimg.com/1200x/96/46/aa/9646aa7c69af7fd8d1dfaa859cc4fc7a.jpg" width="250" height="250" style="border-radius:5px;">
+                      <h3>Lehenga Choli</h3>
+                      <p>₹9,500</p>
+                      <h4>The long,flared skirt with fitted blouse</h4>
+                      <p>Popular for festive occasions, weddings,etc.,</p>
+                      <button>Add to Cart</button>
+                    </div>
+                     <div class="item">
+                       <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/b/s/f/will-you-love-me-anyway-original-imahkm8ngyfsqgad.jpeg?q=70" width="150" height="200" style="border-radius:5px;">
+                       <h3>Will You Love Me Anyway ?</h3>
+                       <p>₹299</p>
+                       <h3>Author</h3>
+                       <p>Meelan Mitali</p>
+                       <button>Add to Cart</button>
+                    </div>
+                    <div class="item">
+                       <img src="https://i.pinimg.com/736x/06/7d/9d/067d9d3536ace3ff2cb25cd60a4a5c1c.jpg" width="250" height="200" style="border-radius:5px;">
+                       <h3>MI Power Bank 3i</h3>
+                        <p>₹1,499</p>
+                        <h3>Key Features</h3>
+                        <p>Affordable,fast charging</p>
+                        <button>Add to Cart</button>
+                     </div>
+                    <div class="item">
+                       <img src="https://i.pinimg.com/736x/d3/0d/b9/d30db9d28c19256e7d16a59597879fc7.jpg" width="250" height="200" style="border-radius:5px;">
+                        <h3>WEIRD WOLF Study Lamp</h3>
+                        <p>₹1,299</p>
+                        <h3>Key Features</h3>
+                        <p>Adjustable brightness, 3 color modes,pen & mobile holder</p><p>rechargeable 1200mAh battery,6-months warranty </p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="item">
+                       <img src="https://th.bing.com/th/id/OIP.L689_Ide7CPKARgR_9F3MgHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" width="250" height="200" style="border-radius:5px;">
+                       <h3>Campus Grit Sneakers</h3>
+                       <p>₹2,599</p>
+                       <h4>Available in all UK Sizes</h4>
+                        <p>Trendy sneakers with chunky sole</p>
+                        <button>Add to Cart</button>
+            </div>
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/91saO95VziL._AC_UY327_FMwebp_QL65_.jpg" width="150" height="200" style="border-radius:5px;">
+                        <h3>The God Of Small Things</h3>
+                        <p>₹499</p>
+                        <h3>Author</h3>
+                        <p>Arundhati Roy</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                 <img src="https://i.pinimg.com/1200x/1a/20/20/1a2020fbfa98174564065744485200e3.jpg" width="300" height="250" align="right" style="border-radius:5px;">
+                <h3>“MegaMart Online — Your Trusted Shopping Partner.”</h3>                                      
+                 <p style="text-align: left;" >Customer support
+                    Phone: 040-258-8547  <br>                                    
+                 ✉️ Email: support@megamart.com<br></p>
+                <p1 align="right" float="right"> - “Safe, Secure, and Smart shopping every time.”<br>                              
+                 Payment modes through(Visa, Mastercard, UPI, PayPal)<br>
+                - © 2026 MegaMart Online. All right reserved.</p1>
+            </div>
+        </div>
+    </body>
+</html>
