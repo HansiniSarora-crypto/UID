@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Store</title>
+        <style>
+            body{
+                background-image: url(https://i.pinimg.com/1200x/22/c7/61/22c761c65eb0f9f13326b26a86651a1c.jpg);
+                background-repeat: repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .Content{
+                display:grid;
+                grid-template-rows: auto auto 1fr auto;
+                grid-template-columns: 200px auto;
+                grid-template-areas: 
+                       "header header"
+                        "sale sale"
+                        "sider products"
+                        "footer footer";
+                gap:10px;
+                padding:10px;
+                width: 100vw;
+                height: 100vh;
+            }
+            .header{
+                grid-area: header;
+                background-color: lavender;
+                color: mediumvioletred;
+                padding: 20px;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: xx-large;
+                font-style: initial;
+                border: 3px solid rgb(141, 74, 141);
+            }
+            .sale{
+                grid-area: sale;
+                background-color:lightpink;
+                color: rgb(66, 3, 43);
+                padding: 20px;
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: x-large;
+                font-style: inherit;
+                border: 3px solid rgb(104, 36, 104);
+            }
+            .sider{
+                grid-area:sider;
+                background-color:mintcream;
+                color: indigo;
+                padding: 20px;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: x-large;
+                font-style: oblique;
+                border: 3px solid rosybrown;
+            }
+            .sider h3{
+                color: darkmagenta;
+            }
+            .products{
+                grid-area:products;
+                background-color:lavenderblush;
+                color:salmon;
+                padding: 20px;
+                text-align: center;
+                font-family: Georgia, Times, 'Times New Roman', serif;
+                font-size: x-large;
+                font-style: oblique;
+                border: 3px solid lightcoral;
+            }
+            .products iframe{
+                width: 100%;
+                height:100%;
+                border:none;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: mistyrose;
+                color:purple;
+                padding: 20px;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: x-large;
+                font-style: initial;
+                border: 3px solid palevioletred;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Content">
+            <div class="header">
+                <img src="https://i.pinimg.com/1200x/c4/7d/a9/c47da90759cf4cbfe08504655ceb9a66.jpg" width="250" height="150" align="left" style="border-radius:5px;">
+                <img src="https://i.pinimg.com/736x/e7/1f/58/e71f58180724194999d59df5387a187d.jpg" width="250" height="150" align="right"style="border-radius:5px;">
+                MegaMart-Online<br>
+                  <br>
+                - “Your wallet's best friend.”
+            </div>
+            <div class="sale"> Why pay more when the best deal is right here?<br>
+                <br>
+                - Your smart shopping moment is here: 50-60% savings on every pick!
+            </div>
+            <div class="sider">
+                <h3>DashBoard</h3>
+                <ul>
+                <li><a href="Electronics.html" target="content" >Electronics</a></li><br>
+                <li><a href="Clothing.html" target="content">Clothing</a></li><br>
+                <li><a href="Home.html" target="content">Home Appliances</a></li><br>
+                <li><a href="Books.html" target="content">Books</a></li>
+                </ul>
+                <br>
+                <img src="https://i.pinimg.com/736x/09/15/54/091554e529bad55281c0f86ad6565e4b.jpg" width="150" height="250" align="center" style="border-radius:5px;">
+            </div>
+            <div class="products"><iframe name="content" width="600" height="600"></iframe>
+            </div>
+            <div class="footer">
+                 <img src="https://i.pinimg.com/1200x/b1/f8/42/b1f8428b0943c4f149b6a0840030db8d.jpg" width="300" height="250" align="right" style="border-radius:5px;">
+                <h3>“MegaMart Online — Your Trusted Shopping Partner.”</h3>                                      
+                 <p style="text-align: left;" >Customer support
+                    Phone: 040-258-8547  <br>                                    
+                 ✉️ Email: support@megamart.com<br></p>
+                <p1 align="right" float="right"> - “Safe, Secure, and Smart shopping every time.”<br>                              
+                 Payment modes through(Visa, Mastercard, UPI, PayPal)<br>
+                - © 2026 MegaMart Online. All right reserved.</p1>
+            </div>
+        </div>
+    </body>
+</html>
